@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="./css/normalize.css">
 <link rel="stylesheet" href="./css/skeleton.css">
 <link rel="stylesheet" href="./css/custom.css">
-<title>ZERO-SHOT MULTI-SPEAKER TEXT-TO-SPEECH VIA LOCAL SPEAKER EMBEDDING</title>
+<title>Phoneme-level Prosody Modeling for Autoregressive Zero-shot Speech Synthesis</title>
 </head>
 <body>
 
@@ -25,133 +25,123 @@
 
 	<main role="main">
 		<article itemscope itemtype="https://schema.org/BlogPosting">
-            <h1 class="entry-title" itemprop="headline">ZERO-SHOT MULTI-SPEAKER TEXT-TO-SPEECH VIA LOCAL SPEAKER EMBEDDING</h1>
+            <h1 class="entry-title" itemprop="headline">Phoneme-level Prosody Modeling for Autoregressive Zero-shot Speech Synthesis</h1>
 			
 			<section itemprop="entry-text">
 <h3 id="comparison-with-other-models">Comparison with Other Models</h3>
-<p><br><em>Now, suddenly we have this new landscape.</em></p>
+<p><br><em>With the support of his friends and family, he faces his demons and finds the courage to move forward, ultimately realizing his dreams and becoming a symbol of inspiration for others. The story is a testament to the transformative power of adversity and the triumph of the human spirit.</em></p>
 <table><thead>
 <tr>
-<th style="text-align: center">GT</th>
-<th style="text-align: center">Attentron ZS</th>
-<th style="text-align: center">YourTTS-40</th>
+<th style="text-align: center">Reference</th>
+<th style="text-align: center">Ours</th>
 </tr></thead><tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_GT.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_yt40.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_yt.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p280/ref.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p280/ours.wav" autoplay/></audio></td>
 </tr>
 </tbody></table>
 <table><thead>
 <tr>
-<th style="text-align: center">Ours-5</th>
-<th style="text-align: center">Ours-20</th>
-<th style="text-align: center">Ours-40</th>
+<th style="text-align: center">Attentron</th>
+<th style="text-align: center">YourTTS</th>
+<th style="text-align: center">Pause-insertion TTS</th>
 </tr></thead><tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_gen5.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_gen20.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_gen40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p280/fastpitch.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p280/yourtts.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p280/pause.wav" autoplay/></audio></td>
 </tr>
 </tbody></table>
-<p><em>Final proposals will be published in February.</em></p>
+<p><br><em>As technology continues to evolve at an unprecedented rate, it is important to consider the ethical and social implications of these advancements, and ensure that they are used for the benefit of humanity rather than its downfall.</em></p>
 <table><thead>
 <tr>
-<th style="text-align: center">GT</th>
-<th style="text-align: center">Attentron ZS</th>
-<th style="text-align: center">YourTTS-40</th>
+<th style="text-align: center">Reference</th>
+<th style="text-align: center">Ours</th>
 </tr></thead><tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_GT.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_yt40.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_yt.wav" autoplay/></audio></td>
-</tr>
-</tbody></table>
-<table><thead>
-<tr>
-<th style="text-align: center">Ours-5</th>
-<th style="text-align: center">Ours-20</th>
-<th style="text-align: center">Ours-40</th>
-</tr></thead><tbody>
-<tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_gen5.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_gen20.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_gen40.wav" autoplay/></audio></td>
-</tr>
-</tbody></table>
-<p><br><em>It seems so long since I did the exams.</em></p>
-<table><thead>
-<tr>
-<th style="text-align: center">GT</th>
-<th style="text-align: center">Attentron ZS</th>
-<th style="text-align: center">YourTTS-40</th>
-</tr></thead><tbody>
-<tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_gt.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_yt.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_yt40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p240/ref.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p240/ours.wav" autoplay/></audio></td>
 </tr>
 </tbody></table>
 <table><thead>
 <tr>
-<th style="text-align: center">Ours-5</th>
-<th style="text-align: center">Ours-20</th>
-<th style="text-align: center">Ours-40</th>
+<th style="text-align: center">Attentron</th>
+<th style="text-align: center">YourTTS</th>
+<th style="text-align: center">Pause-insertion TTS</th>
 </tr></thead><tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_gen5.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_gen20.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_gen40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p240/fastpitch.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p240/yourtts.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p240/pause.wav" autoplay/></audio></td>
 </tr>
 </tbody></table>
-<p><br><em>When a man looks for something beyond his reach, his friends say he is looking for the pot of gold at the end of the rainbow.</em></p>
+<p><br><em>The development of technology has profoundly transformed the way we live and interact with the world. From advancements in communication to the emergence of artificial intelligence and machine learning, technology has reshaped not only the way we work but also how we think and perceive the world around us. </em></p>
 <table><thead>
 <tr>
-<th style="text-align: center">GT</th>
-<th style="text-align: center">Attentron ZS</th>
-<th style="text-align: center">YourTTS-40</th>
+<th style="text-align: center">Reference</th>
+<th style="text-align: center">Ours</th>
 </tr></thead><tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_GT.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_yt40.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_yt.wav" autoplay/></audio></td>
-</tr>
-</tbody></table>
-<table><thead>
-<tr>
-<th style="text-align: center">Ours-5</th>
-<th style="text-align: center">Ours-20</th>
-<th style="text-align: center">Ours-40</th>
-</tr></thead><tbody>
-<tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_gen5.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_gen20.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_gen40.wav" autoplay/></audio></td>
-</tr>
-</tbody></table>
-<p><br><em>My players have no idea about football.</em></p>
-<table><thead>
-<tr>
-<th style="text-align: center">GT</th>
-<th style="text-align: center">Attentron ZS</th>
-<th style="text-align: center">YourTTS-40</th>
-</tr></thead><tbody>
-<tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_gt.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_yt40.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_yt.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/P225/ref.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/P225/ours.wav" autoplay/></audio></td>
 </tr>
 </tbody></table>
 <table><thead>
 <tr>
-<th style="text-align: center">Ours-5</th>
-<th style="text-align: center">Ours-20</th>
-<th style="text-align: center">Ours-40</th>
+<th style="text-align: center">Attentron</th>
+<th style="text-align: center">YourTTS</th>
+<th style="text-align: center">Pause-insertion TTS</th>
 </tr></thead><tbody>
 <tr>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_gen5.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_gen20.wav" autoplay/></audio></td>
-<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_gen40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/P225/fastpitch.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/P225/yourtts.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/P225/pause.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><br><em>The novel tells the story of a group of characters who struggle to overcome their personal challenges and obstacles, revealing the power of resilience and the importance of inner strength. Among them, a young man named Jack  who embarks on a journey of self-discovery after the loss of his mother, emerges as the central character.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">Reference</th>
+<th style="text-align: center">Ours</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p260/ref.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p260/ours.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Attentron</th>
+<th style="text-align: center">YourTTS</th>
+<th style="text-align: center">Pause-insertion TTS</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p260/fastpitch.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p260/yourtts.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p260/pause.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><br><em>We must safeguard our personal information and be mindful of the impact of social media on our mental health. Only by striking a balance between the benefits and risks of technology can we truly reap its rewards and ensure a positive future for ourselves and society.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">Reference</th>
+<th style="text-align: center">Ours</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p251/ref.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p251/ours.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Attentron</th>
+<th style="text-align: center">YourTTS</th>
+<th style="text-align: center">Pause-insertion TTS</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p251/fastpitch.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p251/yourtts.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./duibi/p251/pause.wav" autoplay/></audio></td>
 </tr>
 </tbody></table>
 <h3 id="ablation-study">Ablation Study</h3>
