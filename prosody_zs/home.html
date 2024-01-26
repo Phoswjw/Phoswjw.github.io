@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.62.2" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/skeleton.css">
+<link rel="stylesheet" href="./css/custom.css">
+<title>ZERO-SHOT MULTI-SPEAKER TEXT-TO-SPEECH VIA LOCAL SPEAKER EMBEDDING</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		
+			
+		
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="https://schema.org/BlogPosting">
+            <h1 class="entry-title" itemprop="headline">ZERO-SHOT MULTI-SPEAKER TEXT-TO-SPEECH VIA LOCAL SPEAKER EMBEDDING</h1>
+			
+			<section itemprop="entry-text">
+<h3 id="comparison-with-other-models">Comparison with Other Models</h3>
+<p><br><em>Now, suddenly we have this new landscape.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">GT</th>
+<th style="text-align: center">Attentron ZS</th>
+<th style="text-align: center">YourTTS-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_GT.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_yt40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_yt.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Ours-5</th>
+<th style="text-align: center">Ours-20</th>
+<th style="text-align: center">Ours-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_gen5.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_gen20.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/285/p285_247_gen40.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><em>Final proposals will be published in February.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">GT</th>
+<th style="text-align: center">Attentron ZS</th>
+<th style="text-align: center">YourTTS-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_GT.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_yt40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_yt.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Ours-5</th>
+<th style="text-align: center">Ours-20</th>
+<th style="text-align: center">Ours-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_gen5.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_gen20.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/270/p270_065_gen40.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><br><em>It seems so long since I did the exams.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">GT</th>
+<th style="text-align: center">Attentron ZS</th>
+<th style="text-align: center">YourTTS-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_gt.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_yt.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_yt40.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Ours-5</th>
+<th style="text-align: center">Ours-20</th>
+<th style="text-align: center">Ours-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_gen5.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_gen20.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/262/p262_130_gen40.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><br><em>When a man looks for something beyond his reach, his friends say he is looking for the pot of gold at the end of the rainbow.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">GT</th>
+<th style="text-align: center">Attentron ZS</th>
+<th style="text-align: center">YourTTS-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_GT.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_yt40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_yt.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Ours-5</th>
+<th style="text-align: center">Ours-20</th>
+<th style="text-align: center">Ours-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_gen5.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_gen20.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/294/p294_011_gen40.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><br><em>My players have no idea about football.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">GT</th>
+<th style="text-align: center">Attentron ZS</th>
+<th style="text-align: center">YourTTS-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_gt.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_yt40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_yt.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Ours-5</th>
+<th style="text-align: center">Ours-20</th>
+<th style="text-align: center">Ours-40</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_gen5.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_gen20.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/c/268/p268_221_gen40.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<h3 id="ablation-study">Ablation Study</h3>
+<p><em>The rainbow is a division of white light into many beautiful colors.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">GT</th>
+<th style="text-align: center">Ours-40</th>
+<th style="text-align: center">w/o gate conv</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/240/p240_007_GT.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/240/p240_007_gen40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/240/p240_007_gate.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">w/o feature matching</th>
+<th style="text-align: center">w/o local attention</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/240/p240_007_fm.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/240/p240_007_local.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><em>We have seen a copy of the report.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">GT</th>
+<th style="text-align: center">Ours-40</th>
+<th style="text-align: center">w/o gate conv</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/225/p225_135_GT.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/225/p225_135_gen40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/225/p225_135_gate.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">w/o feature matching</th>
+<th style="text-align: center">w/o local attention</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/225/p225_135_fm.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/225/p225_135_local.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><em>Mexico City was a wonderful experience.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">GT</th>
+<th style="text-align: center">Ours-40</th>
+<th style="text-align: center">w/o gate conv</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/262/p262_041_GT.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/262/p262_041_gen40.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/262/p262_041_gate.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">w/o feature matching</th>
+<th style="text-align: center">w/o local attention</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/262/p262_041_fm.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/a/262/p262_041_local.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+				
+<h3 id="comparison-with-other-models">Robustness experiments using different references</h3>
+<p><br><em>Target: It is a sign of hope.</em></p>
+<p><br><em>Reference 1: When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow.
+We also need a small plastic snake and a big toy frog for the kids.
+She can scoop these things into three red bags, and we will go meet her Wednesday at the train station.
+Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob.
+</em></p>
+<p><br><em>Reference 2: However, the decision has been welcomed by Scottish Enterprise officials.
+Yesterday the company reported a further downturn in profits.
+The squad is too small.
+Russell did not appeal the committee's decision.
+Does the name matter ?
+Nothing has been put into action.
+Ms Anderson yesterday, put a brave face on the departure.
+</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">Ref 1</th>
+<th style="text-align: center">Ours 1</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p225/ref1.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p225/syn1.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Ref 2</th>
+<th style="text-align: center">Ours 2</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p225/ref2.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p225/syn2.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><br><em>Target: Further management changes are planned.</em></p>
+<p><br><em>Reference 1: Mr Darling yesterday dismissed the criticism.
+The staff are very good.
+Nonetheless, the overall picture is healthy.
+Last night, Mr Robertson said he was delighted.
+There was a rush of water.
+We must convince the citizens.
+The first appeared to be successful.
+</em></p>
+<p><br><em>Reference 2: The whole thing was filmed in Hollywood.
+Does it matter ?
+How do you take them away ?
+However, there is an issue, isn't there ?
+After the match, do you ?
+Has the conflict started ?
+Have I really come to this ?
+They desperately want some stability.
+Well, he is an artist.
+</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">Ref 1</th>
+<th style="text-align: center">Ours 1</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p238/ref1.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p238/syn1.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Ref 2</th>
+<th style="text-align: center">Ours 2</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p238/ref2.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p238/syn2.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<p><br><em>Target: In each case they were a goal down.</em></p>
+<p><br><em>Reference 1: The guidelines are expected to be finalised before next spring.
+Getting this right is essential.
+Does the name matter ?
+how do you get it back ?
+What are you not good at ?
+I think, therefore I am ?
+Who was she ?
+We're not seeing an image of the person, he said.
+From there, they can go anywhere.
+I had relied on him.
+We used to live with dignity in our country.
+</em></p>
+<p><br><em>Reference 2: And thought we would get away with it.
+We were a load of rubbish.
+The trust was unable to pay the fourth interim dividend.
+This is a family club.
+They need to win a trophy.
+I was ready for this.
+I am still waiting for a reply.
+Sadly, it sounds as if it is.
+My future is in the marathon.
+The effects are not all bad.
+</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">Ref 1</th>
+<th style="text-align: center">Ours 1</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p287/ref1.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p287/syn1.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">Ref 2</th>
+<th style="text-align: center">Ours 2</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p287/ref2.wav" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="./sample/s/p287/syn2.wav" autoplay/></audio></td>
+</tr>
+</tbody></table>
+				
+<!-- <table><thead>
+<tr>
+<th style="text-align: center">FastSpeech</th>
+<th style="text-align: center">FastSpeech 2</th>
+<th style="text-align: center">FastSpeech 2s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/fs1_kd_attention/0000000001.mp3" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/fs2/0000000001.mp3" autoplay/></audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audio/fs2s/0000000001.mp3" autoplay/></audio></td>
+</tr>
+</tbody></table> -->
+
+			</section>
+		</article>
+	</main>
+
+
+	
+
+</div>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-139981676-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         HTML: ["input/TeX","output/HTML-CSS"],
+         TeX: {
+                Macros: {
+                         bm: ["\\boldsymbol{#1}", 1],
+                         argmax: ["\\mathop{\\rm arg\\,max}\\limits"],
+                         argmin: ["\\mathop{\\rm arg\\,min}\\limits"]},
+                extensions: ["AMSmath.js","AMSsymbols.js"],
+                equationNumbers: { autoNumber: "AMS" } },
+         extensions: ["tex2jax.js"],
+         jax: ["input/TeX","output/HTML-CSS"],
+         tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true },
+         "HTML-CSS": { availableFonts: ["TeX"],
+                       linebreaks: { automatic: true } }
+     });
+ </script>
+
+ <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+       }
+     });
+ </script>
+
+ <script type="text/javascript" async
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+ </script>
+
+
+
+
+</body>
+</html>
